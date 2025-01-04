@@ -38,7 +38,8 @@ Before setting up the environment, ensure you have the following:
    * Add a bucket policy if needed (see below).
 
 #### **Example Bucket Policy:**
-'''sh
+'''markdown
+'''json
 {  
   "Version": "2012-10-17",  
   "Statement": \[  
@@ -59,7 +60,9 @@ Before setting up the environment, ensure you have the following:
 2. Select **AWS Lambda** as the trusted entity.  
 3. Attach the following policies:  
    * **Custom Policy** for Bedrock and S3 access:
-
+     
+'''markdown
+'''json
 {  
   "Version": "2012-10-17",  
   "Statement": \[  
