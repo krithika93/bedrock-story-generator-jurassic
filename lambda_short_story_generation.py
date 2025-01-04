@@ -4,6 +4,7 @@ import json
 from datetime import datetime
 import logging
 import uuid
+import os
 
 # Set up logging
 logger = logging.getLogger()
@@ -227,7 +228,7 @@ def lambda_handler(event, context):
             }
         if generate_story:
             
-            s3_bucket = 'awsbedrockstorygen'
+            s3_bucket = os.environ.get('BUCKET_NAME')
             # Save to S3
             
             s3_response = save_to_s3(generate_story, s3_bucket)
