@@ -38,7 +38,7 @@ Before setting up the environment, ensure you have the following:
    * Add a bucket policy if needed (see below).
 
 #### **Example Bucket Policy:**
-
+'''sh
 {  
   "Version": "2012-10-17",  
   "Statement": \[  
@@ -52,7 +52,7 @@ Before setting up the environment, ensure you have the following:
     }  
   \]  
 }
-
+'''
 ### **2\. Create an IAM Role for Lambda**
 
 1. Go to the **IAM Console** and create a new role.  
