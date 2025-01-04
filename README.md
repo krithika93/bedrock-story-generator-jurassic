@@ -1,1 +1,0 @@
-# bedrock-story-generator-jurassic
