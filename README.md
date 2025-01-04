@@ -38,8 +38,7 @@ Before setting up the environment, ensure you have the following:
    * Add a bucket policy if needed (see below).
 
 #### **Example Bucket Policy:**
-'''markdown
-'''json
+<code>
 {  
   "Version": "2012-10-17",  
   "Statement": \[  
@@ -53,7 +52,7 @@ Before setting up the environment, ensure you have the following:
     }  
   \]  
 }
-'''
+</code>
 ### **2\. Create an IAM Role for Lambda**
 
 1. Go to the **IAM Console** and create a new role.  
@@ -61,8 +60,7 @@ Before setting up the environment, ensure you have the following:
 3. Attach the following policies:  
    * **Custom Policy** for Bedrock and S3 access:
      
-'''markdown
-'''json
+<code>
 {  
   "Version": "2012-10-17",  
   "Statement": \[  
@@ -91,7 +89,7 @@ Before setting up the environment, ensure you have the following:
     }  
   \]  
 }
-
+</code>
 1. Save the role and note the **Role ARN**.
 
 ---
