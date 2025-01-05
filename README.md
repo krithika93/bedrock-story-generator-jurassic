@@ -1,6 +1,6 @@
 ## **AWS Lambda Story Generator with Jurassic-2 Ultra and S3 Integration**
 
-This project demonstrates how to set up an AWS Lambda function to generate imaginative stories using the **Jurassic-2 Ultra model** from **AWS Bedrock** and save the generated stories to an S3 bucket. The function is optimized for handling large outputs and includes timeout and error handling.
+This project demonstrates how to set up an AWS Lambda function to generate imaginative stories using the **Jurassic-2 Ultra model** from **AWS Bedrock** and save the generated stories to an S3 bucket. The function is optimized for handling large outputs and includes timeout and error handling. The function uses environment variables to **securely manage sensitive configurations** like bucket names and model IDs.
 
 ---
 
