@@ -72,8 +72,7 @@ def story_generator(storytopic: str) -> str:
             "prompt": f"Write a story with {storytopic}",
             "maxTokens": 8000,
             "temperature": 0.8,
-            "topP": 0.9,
-            "stopSequences":["\n\n"]
+            "topP": 0.9
             }
 
         logger.info(f"Attempting to generate story with topic: {storytopic}")
