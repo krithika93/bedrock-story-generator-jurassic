@@ -1,0 +1,15 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": "lambda:InvokeFunction",
+			"Resource": "arn:aws:lambda:us-east-1:<ACCOUNT_NUMBER>:function:awsappbedrock"
+		},
+  	{
+			"Effect": "Allow",
+			"Action": "sts:AssumeRole",
+			"Resource": "arn:aws:iam::<ACCOUNT_NUMBER>:role/service-role/awsappbedrock-role-hbaystnp"
+		}
+	]
+}
